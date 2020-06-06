@@ -12,18 +12,45 @@
   <link rel="stylesheet" href="lib/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <script>
-    ons.ready(function() {
-      console.log("Onsen UI is ready!");
-    });
-
-    if (ons.platform.isIPhoneX()) {
-      document.documentElement.setAttribute('onsflag-iphonex-portrait', '');
-      document.documentElement.setAttribute('onsflag-iphonex-landscape', '');
-    }
-  </script>
+ 
 </head>
 <body>
-  This is a template for Onsen UI app.
+ <div class="container">
+   <div class="row">
+     <div class="col-sm">
+         <label>Digite o valor do primeiro lado:</label>
+        <input class="form-control form-control-sm" type="number" id="v1"  placeholder="digite aqui">
+     </div>
+   </div>
+
+ <div class="row">
+     <div class="col-sm">
+         <label>Digite o valor do segundo lado:</label>
+        <input class="form-control form-control-sm" type="number" id="v2"  placeholder="digite aqui">
+     </div>
+   </div>
+
+    <div class="row">
+     <div class="col-sm">
+         <label>Digite o valor do terceiro lado:</label>
+        <input class="form-control form-control-sm" type="number" id="v3"  placeholder="digite aqui">
+     </div>
+   </div>
+
+   <div class="row">
+     <div class="col-sm">
+       <button type="button" class="btn btn-dark btn-block" id="verificar"> saber triangulo</button>
+     </div>
+   </div>
+
+   <div class="row">
+     <div class="col-sm" id="resposta">
+     </div>
+   </div>
+
+
+
+
+ </div>
 </body>
 </html>
